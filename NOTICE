@@ -1,0 +1,12 @@
+gate3-trial — a worked example of AI-DLC Harness (naroo) in small mode
+Copyright 2026 Baek Ga-hui (백가희, neisii)
+https://github.com/neisii/gate3-trial
+
+This repository is a real run of the AI-DLC Harness (naroo) release check
+for 0.2.0: one gateway session and several worker sessions build a small
+order-processing system, with every gate decision recorded in 위임기록.md.
+The harness itself: https://github.com/neisii/harness-naroo
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+If you redistribute this work or a derivative of it, the Apache License
+(section 4(d)) asks you to keep the attribution notices in this NOTICE file.
