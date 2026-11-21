@@ -4,8 +4,8 @@ from orders.codes import 주문상태
 
 
 class 주문상태테스트(unittest.TestCase):
-    def test_멤버는_주문_결제_취소_세_개(self):
-        self.assertEqual([s.name for s in 주문상태], ["주문", "결제", "취소"])
+    def test_멤버는_주문_결제_취소_부분취소_네_개(self):
+        self.assertEqual([s.name for s in 주문상태], ["주문", "결제", "취소", "부분취소"])
 
     def test_값은_멤버_이름과_같은_문자열(self):
         for s in 주문상태:
@@ -14,6 +14,7 @@ class 주문상태테스트(unittest.TestCase):
 
     def test_문자열로_다시_찾는다(self):
         self.assertIs(주문상태("결제"), 주문상태.결제)
+        self.assertIs(주문상태("부분취소"), 주문상태.부분취소)
 
     def test_공통_코드_밖의_값은_ValueError(self):
         with self.assertRaises(ValueError):
